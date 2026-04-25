@@ -1,0 +1,71 @@
+=== POC Viral Load Testing (SSA) Summary (Logit Transformed) ===
+
+Random-Effects Model (k = 5; tau^2 estimator: REML)
+
+  logLik  deviance       AIC       BIC      AICc   
+ -0.2006    0.4011    4.4011    3.1737   16.4011   
+
+tau^2 (estimated amount of total heterogeneity): 0.0326 (SE = 0.0436)
+tau (square root of estimated tau^2 value):      0.1805
+I^2 (total heterogeneity / total variability):   53.47%
+H^2 (total variability / sampling variability):  2.15
+
+Test for Heterogeneity:
+Q(df = 4) = 8.6840, p-val = 0.0695
+
+Model Results:
+
+estimate      se     tval  df    pval   ci.lb   ci.ub      
+  2.0578  0.1126  18.2731   4  <.0001  1.7451  2.3705  *** 
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+
+
+=== Back-transformed Pooled Estimate (Proportion) ===
+Pooled Proportion: 0.887 (95% CI: 0.851 - 0.915)
+
+=== Subgroup Analysis by Intervention Type ===
+
+Mixed-Effects Model (k = 5; tau^2 estimator: REML)
+
+tau^2 (estimated amount of residual heterogeneity):     0.0294 (SE = 0.0486)
+tau (square root of estimated tau^2 value):             0.1714
+I^2 (residual heterogeneity / unaccounted variability): 49.65%
+H^2 (unaccounted variability / sampling variability):   1.99
+
+Test for Residual Heterogeneity:
+QE(df = 3) = 5.9717, p-val = 0.1130
+
+Test of Moderators (coefficients 1:2):
+F(df1 = 2, df2 = 3) = 187.0484, p-val = 0.0007
+
+Model Results:
+
+                            estimate      se     tval  df    pval   ci.lb 
+intervention_typeCommunity    2.2219  0.1738  12.7876   3  0.0010  1.6689 
+intervention_typeFacility     1.9565  0.1348  14.5112   3  0.0007  1.5274 
+                             ci.ub      
+intervention_typeCommunity  2.7749   ** 
+intervention_typeFacility   2.3855  *** 
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+
+=== Leave-One-Out Sensitivity Analysis ===
+
+   estimate     se    tval   pval  ci.lb  ci.ub      Q     Qp   tau2      I2 
+-1   2.0830 0.1443 14.4372 0.0007 1.6238 2.5422 8.6364 0.0345 0.0529 65.4801 
+-2   1.9907 0.1013 19.6493 0.0003 1.6683 2.3131 5.1627 0.1603 0.0186 42.7332 
+-3   2.1421 0.0814 26.3230 0.0001 1.8832 2.4011 2.5932 0.4587 0.0000  0.0102 
+-4   2.0296 0.1391 14.5868 0.0007 1.5868 2.4724 7.5880 0.0553 0.0433 60.8833 
+-5   2.0589 0.1487 13.8465 0.0008 1.5857 2.5321 8.4172 0.0381 0.0557 63.9217 
+       H2 
+-1 2.8969 
+-2 1.7462 
+-3 1.0001 
+-4 2.5565 
+-5 2.7717 
+
